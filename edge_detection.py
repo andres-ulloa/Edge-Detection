@@ -3,23 +3,24 @@ import numpy as np
 import cv2 as cv
 
 
-#0 for vertical and 1 for horizontal
+#1 for vertical and 0 for horizontal
 def sobelFiltering(img, direction):
     pass
 
 
-#0 for vertical and 1 for horizontal
+#1 for vertical and 0 for horizontal
 def laplaceFiltering(img, direction):
     pass
 
 
-#0 for vertical and 1 for horizontal
+#1 for vertical and 0 for horizontal
 def edgeDetection(img, direction, threshold):
     pass
 
 
 def main():
-    pass
-
+    img = cv.imread('lena-grey.png')
+    cv.imwrite(sobelFiltering(img, 0), 'sobel-x.png')
+    
 if __name__ == '__main__':
     main()
