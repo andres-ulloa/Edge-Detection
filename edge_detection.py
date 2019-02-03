@@ -176,10 +176,9 @@ def edgeDetection(img, type_, threshold = 150):
 def main():
 
     img = cv.imread('lena_grey.png',0)
-    """cv.imwrite('sobel-x.png', sobelFiltering(img, 0))
+    cv.imwrite('sobel-x.png', sobelFiltering(img, 0))
     cv.imwrite( 'sobel-y.png', sobelFiltering(img,1))
     cv.imwrite('laplacian.png', laplacianFiltering(img))
-    """
     umbralized_mags = edgeDetection(img, 'prewitt', 100)
     cv.imwrite('umbralized_mag.png', umbralized_mags)
 
